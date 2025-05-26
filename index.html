@@ -43,5 +43,53 @@
     }
 
     button {
-      background-color:
+      background-color: #6772e5;
+      color: #fff;
+      border: none;
+      padding: 14px 24px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 10px 0;
+    }
+
+    button:hover {
+      background-color: #5469d4;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #666;
+    }
+
+    .footer a {
+      color: #666;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>BIZZ Payment Portal</h1>
+    <form>
+      <input type="text" placeholder="Account or Username" required />
+      <input type="number" placeholder="Payment Amount (USD)" required />
+    </form>
+
+    <!-- Stripe Button -->
+    <a href="https://buy.stripe.com/eVa02B9FobSmeAM8ww" target="_blank">
+      <button>Pay with Stripe</button>
+    </a>
+
+    <div class="footer">
+      <p><a href="/privacy-policy">Privacy Policy</a></p>
+    </div>
+  </div>
+</body>
+</html>
 
