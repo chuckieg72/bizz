@@ -1,75 +1,150 @@
 
+
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>BIZZ Payment Portal</title>
+
   <style>
+
     body {
+
       font-family: Arial, sans-serif;
-      background: #f9f9f9;
+
+      background: #f4f4f4;
+
       padding: 40px;
+
       text-align: center;
+
     }
+
     h1 {
+
       color: #333;
+
     }
+
     .payment-box {
+
       background: white;
+
       border-radius: 10px;
-      padding: 30px;
+
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
       max-width: 500px;
+
       margin: 40px auto;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+      padding: 30px;
+
     }
+
     label {
+
       display: block;
+
       text-align: left;
-      margin: 15px 0 5px;
+
+      margin: 15px 5px 5px;
+
       font-weight: bold;
+
     }
-    input[type="text"], input[type="number"] {
+
+    input[type="text"],
+
+    input[type="number"] {
+
       width: 100%;
-      padding: 10px;
+
+      padding: 12px;
+
       margin-bottom: 15px;
-      border: 1px solid #ccc;
+
       border-radius: 5px;
+
+      border: 1px solid #ccc;
+
     }
-    .footer {
-      margin-top: 40px;
-      font-size: 0.9em;
-    }
-    .footer a {
-      color: #007bff;
+
+    .button {
+
+      display: inline-block;
+
+      background-color: #6772e5;
+
+      color: white;
+
+      padding: 15px 30px;
+
+      font-size: 16px;
+
+      border: none;
+
+      border-radius: 5px;
+
       text-decoration: none;
+
     }
+
+    .footer {
+
+      margin-top: 30px;
+
+    }
+
+    .footer a {
+
+      color: #007BFF;
+
+      text-decoration: none;
+
+    }
+
   </style>
+
 </head>
+
 <body>
+
   <h1>BIZZ Payment Portal</h1>
 
   <div class="payment-box">
-    <form>
-      <label for="username">Account or Username</label>
-      <input type="text" id="username" name="username" required />
 
-      <label for="amount">Payment Amount (USD)</label>
-      <input type="number" id="amount" name="amount" required min="1" step="any" />
-    </form>
+    <label for="username">Account or Username</label>
 
-    <!-- Stripe Embedded Button -->
-    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
-    <stripe-buy-button
-      buy-button-id="buy_btn_1RSp22twcIYsSUNZNPuZmu"
-      publishable-key="pk_live_51JpPdV1cYsSIUNz1Mjx07nhbOFLXZ1A08OBDFZ3FGI8n0E8ZllINR84Gdho0Vm6RnDIRFmVIwWJ1IPGCLE0uzwl1qE"
-    >
-    </stripe-buy-button>
+    <input type="text" id="username" name="username" placeholder="Enter your account or username" required>
+
+
+
+    <label for="amount">Payment Amount (USD)</label>
+
+    <input type="number" id="amount" name="amount" placeholder="Enter amount" required>
+
+
+
+    <a href="https://buy.stripe.com/fZu6oI7tc5qT8ZEfR5" class="button" target="_blank">Pay with Stripe</a>
+
   </div>
+
+
 
   <div class="footer">
+
     <a href="#">Privacy Policy</a>
+
   </div>
+
 </body>
+
 </html>
 
