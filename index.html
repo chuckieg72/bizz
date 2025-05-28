@@ -1,95 +1,99 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BIZZ Payment Portal</title>
+  <title>Athena Payment Porthole</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f6fc;
-      color: #333;
+      background: #f2f7ff;
       margin: 0;
       padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
+      text-align: center;
     }
 
-    .container {
-      background: white;
-      padding: 30px 40px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      text-align: center;
-      max-width: 400px;
-      width: 100%;
+    header {
+      background-color: #1a4fa0;
+      color: white;
+      padding: 20px;
     }
 
     h1 {
-      margin-bottom: 20px;
-      color: #2c3e50;
+      margin: 0;
+      font-size: 28px;
     }
 
-    input[type="text"], input[type="number"] {
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
+    .container {
+      margin: 50px auto;
+      padding: 20px;
+      max-width: 400px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 25px;
+      background-color: #1a4fa0;
+      color: white;
+      text-decoration: none;
       font-size: 16px;
-    }
-
-    button {
-      background-color: #6772e5;
-      color: #fff;
-      border: none;
-      padding: 14px 24px;
-      font-size: 16px;
       border-radius: 5px;
-      cursor: pointer;
-      margin: 10px 0;
+      transition: background-color 0.3s ease;
     }
 
-    button:hover {
-      background-color: #5469d4;
+    .button:hover {
+      background-color: #163f80;
     }
 
-    .footer {
-      margin-top: 20px;
+    footer {
+      margin-top: 40px;
       font-size: 12px;
       color: #666;
     }
 
-    .footer a {
-      color: #666;
-      text-decoration: none;
+    .logo {
+      margin-bottom: 20px;
     }
 
-    .footer a:hover {
-      text-decoration: underline;
+    .logo img {
+      width: 100px;
     }
   </style>
+
+  <!-- Add tracking scripts below -->
+  <!-- Example (Google Analytics v4) -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
+  -->
 </head>
 <body>
+  <header>
+    <h1>Athena Payment Porthole</h1>
+  </header>
+
   <div class="container">
-    <h1>BIZZ Payment Portal</h1>
-    <form>
-      <input type="text" placeholder="Account or Username" required />
-      <input type="number" placeholder="Payment Amount (USD)" required />
-    </form>
-
-    <!-- Stripe Button -->
-    <a href="https://buy.stripe.com/fZu6oI7tc5qT8ZEfR5abK00" target="_blank">
-      <button>Pay with Stripe</button>
-    </a>
-
-    <div class="footer">
-      <p><a href="/privacy-policy">Privacy Policy</a></p>
+    <div class="logo">
+      <!-- Replace with your logo if needed -->
+      <img src="https://via.placeholder.com/100x100?text=A" alt="Athena Logo">
     </div>
+
+    <p>Click the button below to complete your secure payment:</p>
+
+    <a class="button" href="https://buy.stripe.com/fZu6oI7tc5qT8ZEfR5abK00">Pay with Stripe</a>
   </div>
+
+  <footer>
+    &copy; 2025 Today's Marketing Solutions LLC
+  </footer>
 </body>
 </html>
-
