@@ -32,20 +32,22 @@
       border-radius: 6px;
       font-size: 16px;
     }
-    .button {
-      display: inline-block;
-      padding: 14px 28px;
-      font-size: 16px;
+    a.button {
+      display: block;
+      padding: 14px 20px;
+      margin: 15px auto;
+      font-size: 18px;
+      font-weight: bold;
       color: #fff;
-      background-color: #003366;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
       text-decoration: none;
-      margin-top: 10px;
+      border-radius: 6px;
+      width: 80%;
     }
-    .button:hover {
-      background-color: #00509e;
+    .stripe-btn {
+      background-color: #0a2540;
+    }
+    .crypto-btn {
+      background-color: #1652f0;
     }
     .note {
       font-size: 14px;
@@ -92,11 +94,15 @@
     <form action="https://buy.stripe.com/4gMdRa3cW2eH8ZE8oD" method="GET">
       <input type="email" name="email" placeholder="Enter your email" required />
       <br/>
-      <button class="button" type="submit">Proceed to Payment</button>
+      <button class="button stripe-btn" type="submit">Pay with Debit or Credit Card</button>
     </form>
 
+    <a class="button crypto-btn" href="https://commerce.coinbase.com/checkout/3d01e79e-2b78-4656-b663-a36a15bbf395" target="_blank">
+      Pay with Crypto (Coinbase)
+    </a>
+
     <div class="note">
-      Your email will be used to confirm your payment. No additional details needed.
+      You can change the crypto payment amount after clicking the button.
     </div>
 
     <div class="fb-link">
@@ -165,7 +171,6 @@
   </div>
 </body>
 </html>
-
 
 Sent from Yahoo Mail for iPhone
 
