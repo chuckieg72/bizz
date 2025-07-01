@@ -7,51 +7,55 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f4f8fb;
-      margin: 0;
-      padding: 0;
+      background-color: #f4f4f4;
       text-align: center;
+      padding: 30px;
     }
     .container {
       max-width: 750px;
-      margin: auto;
-      background: #fff;
-      padding: 30px;
-      margin-top: 40px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin: 0 auto;
+      background: white;
+      padding: 40px;
       border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
     }
     h1 {
       color: #003366;
+      margin-bottom: 30px;
     }
     input[type="email"] {
       padding: 12px;
       width: 90%;
-      margin: 20px 0;
+      margin-bottom: 20px;
       border: 1px solid #ccc;
       border-radius: 6px;
       font-size: 16px;
     }
-    a.button {
+    .button {
       display: block;
-      padding: 14px 20px;
-      margin: 15px auto;
-      font-size: 18px;
+      width: 80%;
+      padding: 15px;
+      margin: 10px auto;
+      font-size: 16px;
       font-weight: bold;
       color: #fff;
-      text-decoration: none;
+      border: none;
       border-radius: 6px;
-      width: 80%;
+      text-decoration: none;
+      text-align: center;
     }
-    .stripe-btn {
+    .stripe-button {
       background-color: #0a2540;
     }
-    .crypto-btn {
+    .crypto-button {
       background-color: #1652f0;
+    }
+    .button:hover {
+      opacity: 0.9;
     }
     .note {
       font-size: 14px;
-      color: #555;
+      color: #444;
       margin-top: 10px;
     }
     .fb-link {
@@ -90,82 +94,35 @@
 <body>
   <div class="container">
     <h1>Athena Payment Porthole</h1>
-
-    <form action="https://buy.stripe.com/4gMdRa3cW2eH8ZE8oD" method="GET">
+    
+    <form action="https://buy.stripe.com/6oU14o9Bk8D55Ns48nabK04" method="GET">
       <input type="email" name="email" placeholder="Enter your email" required />
-      <br/>
-      <button class="button stripe-btn" type="submit">Pay with Debit or Credit Card</button>
+      <button type="submit" class="button stripe-button">Pay with Debit or Credit Card</button>
     </form>
 
-    <a class="button crypto-btn" href="https://commerce.coinbase.com/checkout/3d01e79e-2b78-4656-b663-a36a15bbf395" target="_blank">
-      Pay with Crypto (Coinbase)
-    </a>
-
-    <div class="note">
-      You can change the crypto payment amount after clicking the button.
-    </div>
+    <a class="button crypto-button" href="https://commerce.coinbase.com/checkout/3d01e79e-2b78-4656-b663-a36a15bbf395" target="_blank">Pay with Crypto</a>
+    
+    <div class="note">You can change the crypto payment amount after clicking the button.</div>
 
     <div class="fb-link">
       <h3>Reach Athena’s New Account Here:</h3>
-      <a href="https://www.facebook.com/athena.parker.856107?mibextid=ZbWKwL" target="_blank">
-        facebook.com/athena.parker.856107
-      </a>
+      <a href="https://www.facebook.com/athena.parker.856107?mibextid=ZbWKwL" target="_blank">facebook.com/athena.parker.856107</a>
     </div>
 
     <div class="service-list">
       <h2>Content Creator Service List</h2>
       <ul>
-        <li>1. Bio Polish & Optimization</li>
-        <li>2. Daily Post Boost</li>
-        <li>3. Follower Scrub & Clean</li>
-        <li>4. 24-Hour Engagement Surge</li>
-        <li>5. LinkTree Optimization</li>
-        <li>6. 10x Hashtag Research</li>
-        <li>7. Video Caption Fix</li>
-        <li>8. Algorithm Watch</li>
-        <li>9. Social Story Enhancement</li>
-        <li>10. Audience Growth Map</li>
-        <li>11. Highlight Cover Design</li>
-        <li>12. Watermark Branding</li>
-        <li>13. 7-Day Post Planner</li>
-        <li>14. Post Timing Advisor</li>
-        <li>15. Top Fan Finder</li>
-        <li>16. Post Like Surge</li>
-        <li>17. Story View Multiplier</li>
-        <li>18. DM Funnel Setup</li>
-        <li>19. Automated Replies</li>
-        <li>20. Quick Growth Burst</li>
-        <li>21. Account Review Session</li>
-        <li>22. Shadowban Checker</li>
-        <li>23. Highlight Pack Upload</li>
-        <li>24. Profile Banner Design</li>
-        <li>25. Trend Hijack Strategy</li>
-        <li>26. Reel Ranking Boost</li>
-        <li>27. Follower Sync Service</li>
-        <li>28. Real-Time Traffic Push</li>
-        <li>29. Engagement Health Scan</li>
-        <li>30. Link Monitor Setup</li>
-        <li>31. Monthly Growth Map</li>
-        <li>32. Viral Sound Insert</li>
-        <li>33. Daily Engagement Bot</li>
-        <li>34. Page Audit + Report</li>
-        <li>35. Post Optimization Pack</li>
-        <li>36. Real Comments Strategy</li>
-        <li>37. Comment Section Cleanup</li>
-        <li>38. Weekly Analytics Report</li>
-        <li>39. Niche Hashtag Set</li>
-        <li>40. Engagement Club Access</li>
-        <li>41. 30-Day Tracker System</li>
-        <li>42. Viral Format Template</li>
-        <li>43. Subscriber Funnel Fix</li>
-        <li>44. DM Invite Campaign</li>
-        <li>45. Personal Growth Advisor</li>
-        <li>46. Page Recovery Assist</li>
-        <li>47. Monthly Boost Bundle</li>
-        <li>48. Revenue Readiness Check</li>
-        <li>49. Custom Promo Design</li>
-        <li>50. VIP Upgrade Pack</li>
-        <li>51. Content Creator Power Plan</li>
+        <li>1. Service #1</li><li>2. Service #2</li><li>3. Service #3</li><li>4. Service #4</li><li>5. Service #5</li>
+        <li>6. Service #6</li><li>7. Service #7</li><li>8. Service #8</li><li>9. Service #9</li><li>10. Service #10</li>
+        <li>11. Service #11</li><li>12. Service #12</li><li>13. Service #13</li><li>14. Service #14</li><li>15. Service #15</li>
+        <li>16. Service #16</li><li>17. Service #17</li><li>18. Service #18</li><li>19. Service #19</li><li>20. Service #20</li>
+        <li>21. Service #21</li><li>22. Service #22</li><li>23. Service #23</li><li>24. Service #24</li><li>25. Service #25</li>
+        <li>26. Service #26</li><li>27. Service #27</li><li>28. Service #28</li><li>29. Service #29</li><li>30. Service #30</li>
+        <li>31. Service #31</li><li>32. Service #32</li><li>33. Service #33</li><li>34. Service #34</li><li>35. Service #35</li>
+        <li>36. Service #36</li><li>37. Service #37</li><li>38. Service #38</li><li>39. Service #39</li><li>40. Service #40</li>
+        <li>41. Service #41</li><li>42. Service #42</li><li>43. Service #43</li><li>44. Service #44</li><li>45. Service #45</li>
+        <li>46. Service #46</li><li>47. Service #47</li><li>48. Service #48</li><li>49. Service #49</li><li>50. Service #50</li>
+        <li>51. Service #51</li>
       </ul>
     </div>
   </div>
